@@ -4,13 +4,13 @@ using namespace std;
 
 class Fibonacci{
 
-    public:
-    int a , b, c;
+public:
     long long fib_recur(int n);
     void fib_dp(int n);
 };
 
 long long Fibonacci::fib_recur(int n){
+   
     if ( n==0 || n == 1)
        return n;
     
@@ -47,7 +47,9 @@ int main()
 
     cout << endl;
 
-
+    // recursive way to calculate Fibonacci series
+    // comment the following code for 100 numbers of Fibonacci Series is wanted
+    
     cout << "calculate " << n << " Fibonacci Series using recursion" << endl;
     for (int i = 1; i <=n; ++i)
       cout << fibObj.fib_recur(i) << " ";
